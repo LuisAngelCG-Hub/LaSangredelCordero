@@ -1,0 +1,117 @@
+// boostrap
+@import "..//bootstrap/scss/bootstrap.scss";
+//----------------------------
+// PATRON DE COLORES
+//----------------------------
+$textotitulos: #ffbf00;
+$textoparrafos: #000000;
+$textofrases: #f2f1f0;
+$secundario: #ffffff;
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: $textoparrafos;
+}
+.bienvenidos {
+  background: url("../img/Fondos/moises-y-los-misterios.jpg") no-repeat center
+    top;
+  color: #fff;
+  background-size: cover;
+  background-attachment: fixed !important;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.encabezado {
+  background: $textofrases;
+  color: #000000;
+  padding: 0.5rem 0;
+  transition: all 0.5s ease;
+}
+.encabezado.fondo-menu {
+  background: #ffbf00;
+  padding: 1rem 0;
+}
+.encabezado .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.encabezado .logo img {
+  width: 350px;
+  height: auto;
+}
+/*Estilos para el boton : llamar, buscar y menu*/
+
+.boton-llamar,
+.boton-buscar,
+.boton-menu {
+  border: 0;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0 0.5rem;
+  background: transparent;
+  color: #000000;
+}
+.boton-llamar:focus,
+.boton-buscar:focus,
+.boton-menu:focus {
+  outline: 0;
+}
+/*Estilo bloque llamar*/
+.boton-llamar {
+  margin-left: auto;
+  margin-right: 0.8rem;
+}
+.boton-buscar {
+  margin-left: auto;
+  margin-right: 0.8rem;
+}
+/*Estilos bloque buscar*/
+#bloque-buscar {
+  flex: 1 1 100%;
+}
+.contenedor-bloque-buscar {
+  display: flex;
+  height: 3rem;
+  margin: 1rem 0;
+}
+.contenedor-bloque-buscar input [type="text"] {
+  border: 0;
+  border-radius: 5px 0 0 5px;
+  padding: 1rem;
+  flex: 1 1 auto;
+}
+.contenedor-bloque-buscar input [type="submit"] {
+  flex: 1 1 auto;
+  border: 0;
+  border-radius: 0 5px 5px 0;
+  background: $textoparrafos;
+  color: #fff;
+  flex: 0 1 auto;
+  padding: 0 1rem;
+}
+#menu-principal {
+  flex: 1 1 100%;
+}
+#menu-principal ul {
+  padding: 0;
+  list-style: none;
+  margin: 1rem 0 0 0;
+}
+#menu-principal ul a {
+  display: block;
+  padding: 0.8rem 0;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  border-top: 1px solid #e9e5d9;
+  text-decoration: none;
+}
+#menu-principal ul a:hover,
+#menu-principal ul li.active a {
+  color: $textotitulos;
+}
