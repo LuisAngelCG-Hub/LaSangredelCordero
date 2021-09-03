@@ -14,23 +14,32 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   color: $textoparrafos;
-  display:block;
-  box-sizing:border-box;
-  
- 
+  display: block;
+  box-sizing: border-box;
 }
 .bienvenidos {
   background: url("../img/Fondos/moises-y-los-misterios.jpg");
   color: #fff;
   background-size: cover;
-  height: 100vh;
+  width: 100%;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   position: relative;
   background-color: #000;
-  
+  filter: brightness(50%);
+  /**filter:opacity(30%);*/
 }
-
+.bienvenidos .container {
+  justify-content: center;
+  padding-top: 10%;
+}
+.inicio .container p {
+  font-size: 2em;
+  color: #fff;
+  filter: brightness(100%);
+  font-family: 'Open Sans Condensed', sans-serif;
+}
 .encabezado {
   background: $textofrases;
   color: #000000;
@@ -122,6 +131,13 @@ body {
   color: $textotitulos;
 }
 
-.texto-encabezado{
-  text-align:center;
+.texto-encabezado {
+  text-align: center;
+}
+.card-iglesia {
+  background-color: #000;
+  color: $textotitulos;
+}
+.text-blanco {
+  color: #fff;
 }
