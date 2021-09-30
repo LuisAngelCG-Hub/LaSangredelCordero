@@ -14,9 +14,12 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/fontawesome-all.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
@@ -118,9 +121,9 @@
           >
             ¿No soy YO, el SEÑOR?
           </p>
-          <p class="titulo-secundario ">Éxodo 4:11</p>
-          <a href="Nosotros.html" class="btn btn-primary btn-lg"
-            >Acerca de Nosotros</a
+          <p class="titulo-secundario">Éxodo 4:11</p>
+          <a href="Nosotros.html" class="btn boton-evento btn-lg"
+            >Nuestros Eventos</a
           >
           <div class="flecha-bajar text-xs-center">
             <a data-scroll href="#Nosotros"
@@ -148,8 +151,19 @@
         </div>
       </div>
     </section>
+
     <section id="ubicacion">
+      <div class="title">
+        <h3 class="titleText">UBICACIÓN</h3>
+      </div>
+
       <div class="content">
+        <ul>
+          <li>
+            Jr.Villa del Mar con Pasaje 12 de Enero Mz. G Lt1 y 2 - Coishco
+          </li>
+          <li>Celular: 981271711</li>
+        </ul>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d3940.4377082686196!2d-78.62102561275138!3d-9.023774843984215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d-9.0237619!2d-78.618911!4m3!3m2!1d-9.02394!2d-78.61897069999999!5e0!3m2!1ses-419!2spe!4v1630391106499!5m2!1ses-419!2spe"
           width="100%"
@@ -158,19 +172,6 @@
           allowfullscreen=""
           loading="lazy"
         ></iframe>
-        <iframe
-          src="https://www.google.com/maps/d/embed?mid=1ijG9_Mrf00kATpzYYRWLe9Zd7KhGtPFr"
-          width="100%"
-          height="480"
-        ></iframe>
-      </div>
-      
-      <div class="title">
-        <h3 class="titleText">COISHCO</h3>
-        <ul>
-          <li>Jr.Villa del Mar con Pasaje 12 de Enero Mz. G Lt1 y 2</li>
-          <li>Celular: 981271711</li>
-        </ul>
       </div>
     </section>
 
@@ -178,24 +179,128 @@
       <div class="title">
         <h3 class="titleText">PRESENTACIÓN</h3>
       </div>
-      <div class="content">
-        video
-        <button value="Constitución de la Iglesia"></button>
+      <div class="container content">
+        <div class="row">
+          <div class="col">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/U04kSxTQjbc"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="col">
+            <a class="btn boton-morado">Constitución de la Iglesia</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="actividades">
       <div class="title">
         <h3 class="titleText">ACTIVIDADES</h3>
+        <p class="title-morado">
+          Rescatando almas para nuestro Señor Jesús y anunciando el mensaje de
+          salvación a toda criatura.
+        </p>
       </div>
-      <div class="content">nuestros eventos</div>
+      <div class="container content">
+        <div class="row">
+          <div class="col">
+            <a class="btn btn-circle"><i class="far fa-calendar-check"></i></a>
+            <h5 class="title-morado">NUEVOS EVENTOS</h5>
+          </div>
+          <div class="col">
+            <a class="btn btn-circle"><i class="far fa-calendar-check"></i></a>
+            <h5 class="title-morado">TESTIMONIOS DE ÉXITO</h5>
+          </div>
+          <div class="col">
+            <a class="btn btn-circle"><i class="far fa-calendar-check"></i></a>
+            <h5 class="title-morado">CONSEJERIA</h5>
+          </div>
+          <div class="col">
+            <a class="btn btn-circle"><i class="far fa-calendar-check"></i></a>
+            <h5 class="title-morado">AFILIACIÓN PARA IGLESIAS</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <a class="btn btn-circle"><i class="far fa-calendar-check"></i></a>
+            <h5 class="title-morado">DONACIONES</h5>
+          </div>
+          <div class="col">
+            <a class="btn btn-circle"><i class="far fa-calendar-check"></i></a>
+            <h5 class="title-morado">PETICIONES DE ORACIÓN</h5>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="galeria">
       <div class="title">
-        <h3 class="titleText">INSTANTÁNEAS</h3>
+        <h3 class="titleText">INSTANTÁNEAS DE LA IGLESIA</h3>
+        <p class="title-morado">Unidos en confraternidad con Cristo.</p>
       </div>
-      <div class="content">galería</div>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/fotografias/1.JPG" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="/img/fotografias/2.JPG" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="/img/fotografias/3.JPG" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
 
     <section id="radio">
@@ -210,16 +315,33 @@
         </p>
       </div>
     </section>
-    <section id="galeria">
-      <div class="title">
-        <h3 class="titleText">INSTANTÁNEAS</h3>
+    <section id="enlaces">
+      <div class="content">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="#">Consejería para Cristianos</a></li>
+          <li><a href="#">Horarios de Atención</a></li>
+          <li>
+            <a href="#">Afiliación para iglesias<i class="fas fa-tv"></i></a>
+          </li>
+          <li>
+            <a href="#">Donaciones<i class="fas fa-heart"></i></a>
+          </li>
+          <li><a href="#">Historia de la Iglesia</a></li>
+        </ul>
       </div>
-      <div class="content">galería</div>
     </section>
-    <header>
-      <div>Copyright &copy;2021 - LA SANGRE DEL CORDERO</div>
-      <div></div>
-    </header>
+    <footer>
+      <p>
+        Copyright &copy;2021 - LA SANGRE DEL CORDERO
+        <i class="fas fa-heart"></i>
+      </p>
+      <div class="iconos">
+        <a><i class="fab fa-facebook-square"></i></a>
+        <a><i class="fab fa-instagram-square"></i></a>
+        <a><i class="fab fa-youtube"></i></a>
+      </div>
+    </footer>
 
     <script src="js/jquery.js"></script>
     <script src="js/popper.js"></script>
